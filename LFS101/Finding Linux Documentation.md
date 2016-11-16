@@ -8,3 +8,6 @@ enter and return a node
 
 ## help
 help command shows internally defined shell commands.
+
+## Package documentation
+/usr/share/doc
