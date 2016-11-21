@@ -1,3 +1,4 @@
+## Section Basic operations
 1. Login and SSH
 2. `shutdown`
 3. `which & whereis`
@@ -5,7 +6,7 @@
 5. `tree -d -L`
 6. difference between hard link and soft link (needs to understand inode before answering this question)
 
-
+## Searching for a file
 1. Standard file stream, 0: stdin, 1: stdout, 2: stderr
 2. I/O redirect
 
