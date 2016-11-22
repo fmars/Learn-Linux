@@ -27,3 +27,14 @@
    
 5. locate and updatedb
 
+## Working with files
+1. cat
+2. less
+3. tail [-n] [-f], head
+4. touch
+5. rm -rf
+6. export PS1='\u\$ '
+
+## Installing softwares
+1. rpm & dpkg
+2. yum & apt
