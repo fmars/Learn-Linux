@@ -1,0 +1,19 @@
+1. Disk partition and mount point
+2. NFS
+  - nfs server, /etc/export
+  - nfs client, mount
+3. proc
+4. diff/patch
+5. file
+
+# Backup and compress data
+1. rsync
+2. gzip, bzip2
+3. zip/ zip -r/ unzip
+4. 
+  - tar -zcvf t.tar.gz t
+  - tar -xvf
+  - tar -cvf t.tar t && gzip t.tar.gz t.tar
+  - gunzip t.tar.gz && tar -xvf t.tar
+
+  
