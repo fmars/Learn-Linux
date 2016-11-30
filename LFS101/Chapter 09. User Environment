@@ -1,0 +1,15 @@
+## Account
+1. useradd/userdel
+2. id
+3. groupadd/groupdel/usermod/groupmod
+4. su/sudo
+5. startup files
+   1. .bash_profile: first time login
+   2. .bashrc new terminal/tab created
+  
+## Environment Variables
+1. env/set/export? Difference?
+2. export/ .bashrc
+3. HOME/PATH/PS1/SHELL
+
+## Recall previous commands
