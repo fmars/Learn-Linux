@@ -7,4 +7,14 @@
   2. echo 'string' >> file
   3. echo -e 'string\n' > file
   4. echo $VAR
-  
+1. sed s/str1/str2/g file
+2. awk -F:　'{print $1 $4}' file
+3. sort [file]: sort lines in the file. With no file, sort standard input
+  1. sort file contents: ls | xargs cat | sort
+  2. sort file names: ls | sort
+  3. sort content of a file: sort file
+4. uniq: similar to sort about parameter
+5. paste -d : file1 file2
+6. join
+7. split
+8. grep
