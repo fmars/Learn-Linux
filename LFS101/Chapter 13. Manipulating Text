@@ -7,14 +7,20 @@
   2. echo 'string' >> file
   3. echo -e 'string\n' > file
   4. echo $VAR
-1. sed s/str1/str2/g file
-2. awk -F:　'{print $1 $4}' file
-3. sort [file]: sort lines in the file. With no file, sort standard input
+3. sed s/str1/str2/g file
+4. awk -F:　'{print $1 $4}' file
+5. sort [file]: sort lines in the file. With no file, sort standard input
   1. sort file contents: ls | xargs cat | sort
   2. sort file names: ls | sort
   3. sort content of a file: sort file
-4. uniq: similar to sort about parameter
-5. paste -d : file1 file2
-6. join
-7. split
-8. grep
+6. uniq: similar to sort about parameter
+7. paste -d : file1 file2
+8. join
+9. split
+10. grep
+11. echo 'some string' | tee file
+12. wc -l -c -w
+13. cut: if there is file name specified, take file as input, otherwise use standard input
+14. head -n, tail -n
+
+15. **find -name '*.php' -print0 | xargs -0 wc -l
