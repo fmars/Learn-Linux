@@ -1,0 +1,13 @@
+1. ps
+  - ps -e
+  - ps -ef
+  - ps -eLf
+  - ps aux
+  
+2. pstree
+3. kil -9 pid
+4. top
+5. w
+6. &, bg, fg
+7. crontab -e
+8. sleep
