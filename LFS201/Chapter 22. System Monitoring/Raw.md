@@ -16,3 +16,14 @@ while True:
 - cat /proc/pid/status
 
 - See more use `man proc`
+
+- cat /proc/interrupts
+
+- tunable system parameters `/proc/sys/`
+- change a parameter
+   - `echo 10000 > threads_max` won't work
+   - `sudo echo 10000 > threads_max` won't work 
+   - `sudo bash echo 10000 > threads_max` won't work 
+   - `sudo bash -c 'echo 10000 > threads_max'` works
+   
+- ls -lF /sys/class/net/
