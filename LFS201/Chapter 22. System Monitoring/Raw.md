@@ -1,4 +1,4 @@
-# Explore how does a process store in /proc
+# /proc
 - ls -lF /proc (-F append indicator)
 - Run a test python script in background, `./test_proc.py arg1 arg2`
 
@@ -26,4 +26,30 @@ while True:
    - `sudo bash echo 10000 > threads_max` won't work 
    - `sudo bash -c 'echo 10000 > threads_max'` works
    
+# /sys
 - ls -lF /sys/class/net/
+
+# sar System Activety Reporter
+- sar
+- backend cron job `sadc` started by `/etc/cron.d/xxx` and stores data in `/var/log/caxxx`
+- sar [options] [internal] [count]
+
+# Monitoring Utilities
+1. Process and load
+    - top
+    - ps
+    - pstree
+    - sar
+    - strace: all system calls a program invokes
+2. Memery
+    - free
+    - vmstat
+    - pmap
+3, IO
+    - iostat
+4. Network
+    - netstat
+    - tcpdump
+    
+# Stress test
+- stress
