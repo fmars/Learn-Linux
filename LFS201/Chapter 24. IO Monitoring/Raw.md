@@ -20,9 +20,10 @@
 # iotop
 - left,right arrow: select sort column
 - `r`
+- `-o`
 
 # ionice
 - set io priority
-- `-o`
+
 
   
