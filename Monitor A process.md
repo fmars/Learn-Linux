@@ -8,7 +8,16 @@ I need a tailer program to tail data from a remote storage system. But I also ne
 We take a multithread download program as an example to demonstrate how we monitor the performance of a program.
 
 ## Steps
-##### How to get basic host infos
-- CPU: 
+#### How to get basic host infos
+- number of CPUs
+```
+lscpu
+```
+- Size of physical memory
+```
+free
+cat /proc/meminfo
+```
+
 - Q: 
   A: 
