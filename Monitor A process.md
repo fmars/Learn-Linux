@@ -10,10 +10,9 @@ We take a multithread download program as an example to demonstrate how we monit
 ## Steps
 #### How to get basic host infos
 1. Number of CPUs. 
-
    `lscpu`. 
-   
-   Note: #CPU = Cores_per_socket * #socket * Threads_per_core
+    Note: #CPU = Cores_per_socket * #socket * Threads_per_core
 2. Size of physical memory. 
-   `free - h`
+   `free - h;`
    `cat /proc/meminfo`
+3. 
