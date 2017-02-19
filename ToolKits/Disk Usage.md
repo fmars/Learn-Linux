@@ -6,7 +6,7 @@ fmars$ cd /mbash: cannot create temp file for here-document: No space left on de
 ```
 
 #### 1. Disk capacity
-`df -h` shows file system disk space usage.
+`df -h` shows the disk usage of each file system.
 ```
 fmars$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
@@ -18,3 +18,14 @@ tmpfs           5.0M  4.0K  5.0M   1% /run/lock
 tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
 tmpfs           386M   64K  386M   1% /run/user/1000
 ```
+/dev/sda1 is the hard disk we're using which is mounted to /. Now it is exhausted. 
+
+udev is the file system to handle new device insert and remove. It is mounted to /dev
+
+tmpfs are file systems in memory such as /run. Also /dev/shm where data will be lost if power off.
+
+
+Now we know the disk is full. next we want to know who runs most of our disk.
+
+### 2. Disk usage
+`du` shows the disk usage of each folder and file
