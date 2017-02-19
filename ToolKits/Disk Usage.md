@@ -60,4 +60,7 @@ f@f-VirtualBox:~$ sudo du -h -d 1 / 2>&1 | grep -v cannot
 Now we found /usr is the largest one. So we further dig into that folder. `sudo du -h -d 1/usr/lib`
 The problem we realized is, since we installed too many packages which run out of disk space. Next step, how to deal with those packages.
 
-
+### 3. Package info
+- `which vim /usr/bin/vim`
+- `ldd /us/bin/vim` check all libraries a package depends on
+- 
