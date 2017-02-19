@@ -29,3 +29,30 @@ Now we know the disk is full. next we want to know who runs most of our disk.
 
 ### 2. Disk usage
 `du` shows the disk usage of each folder and file
+```
+f@f-VirtualBox:~$ sudo du -h -d 1 / 2>&1 | grep -v cannot
+0	/sys
+16K	/lost+found
+424M	/lib
+6.5M	/run
+11M	/bin
+432M	/var
+4.0K	/srv
+60M	/boot
+4.0K	/cdrom
+4.0K	/mnt
+8.0K	/opt
+52K	/tmp
+3.0G	/usr
+0	/proc
+4.0K	/lib64
+4.0K	/media
+48K	/root
+136K	/dev
+22M	/home
+14M	/sbin
+13M	/etc
+4.0K	/snap
+4.0G	/
+```
+(Thanks to stupid virtual box, I have lost my previous VM. This is the new one I created, so out of disk issue never exists.
