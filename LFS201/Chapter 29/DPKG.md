@@ -4,7 +4,7 @@ Low level package management tools.
 
 
 - Debian package has a '.deb' suffix
-- `apt-get install` and 'apt-get source'
+- `apt-get install` and `apt-get source`
 - `dpkg -l`: list all packages
 - `dpkg -L`: list all files of a installed package
 - `dpkg -W`: info of a installed package
