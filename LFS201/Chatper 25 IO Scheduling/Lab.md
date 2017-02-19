@@ -1,8 +1,0 @@
-- Define a variable
-  - VAR='some_value' // no space between equal sign
-- Difference between set a variable and export a variable
-  - if visible from child process of the shell
-- [[ -n $1 ]] && NMAX=$1
-  - if the first parameter is assigned, set NMAX equal to it
-  - [[ -n STRING ]] true if string length is not zero
-- wait: wait for a process finish
