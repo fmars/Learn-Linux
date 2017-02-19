@@ -118,3 +118,6 @@ The problem we realized is, since we installed too many packages which run out o
     vim: /usr/bin/vim.basic
     ```
 - List all the package and size ans sort them by size `dpkg-query -W -f '${Installed-Size}\t${Package}\n' | sort -k 1 -n`
+
+#### 4. Remove a package
+` sudo dpkg -r vim`
