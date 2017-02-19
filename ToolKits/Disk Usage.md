@@ -55,4 +55,9 @@ f@f-VirtualBox:~$ sudo du -h -d 1 / 2>&1 | grep -v cannot
 4.0K	/snap
 4.0G	/
 ```
-(Thanks to stupid virtual box, I have lost my previous VM. This is the new one I created, so out of disk issue never exists.
+(Thanks to stupid virtual box, I have lost my previous VM. This is the new one I created, so out of disk issue never exists. But I'm still following the same process to pinpoint the problem to pretend there is one.)
+
+Now we found /usr is the largest one. So we further dig into that folder. `sudo du -h -d 1/usr/lib`
+The problem we realized is, since we installed too many packages which run out of disk space. Next step, how to deal with those packages.
+
+
