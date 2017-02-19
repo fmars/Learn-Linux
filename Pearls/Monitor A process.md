@@ -20,3 +20,13 @@ We take a multithread download program as an example to demonstrate how we monit
    
    `cat /proc/meminfo`
  
+#### Start the testing program
+```
+aria2c -x 4 http://download.thinkbroadband.com/1GB.zip
+```
+aria2c is a multithread downloading program. And we test to download a 1GB testing file with 4 threads. 
+
+#### Monitoring
+- Number of thread used
+   ```
+   
