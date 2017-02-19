@@ -63,4 +63,58 @@ The problem we realized is, since we installed too many packages which run out o
 ### 3. Package info
 - `which vim /usr/bin/vim`
 - `ldd /us/bin/vim` check all libraries a package depends on
-- 
+- `dpkg - s` shows size and dependencies'
+
+   ```
+    f@f-VirtualBox:~$ dpkg -s vim
+    Package: vim
+    Status: install ok installed
+    Priority: optional
+    Section: editors
+    Installed-Size: 2432
+    Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+    Architecture: amd64
+    Version: 2:7.4.1829-1ubuntu2.1
+    Provides: editor
+    Depends: vim-common (= 2:7.4.1829-1ubuntu2.1), vim-runtime (= 2:7.4.1829-1ubuntu2.1), libacl1 (>= 2.2.51-8), libc6 (>= 2.15), libgpm2 (>= 1.20.4), libpython3.5 (>= 3.5.0~b1), libselinux1 (>= 1.32), libtinfo5 (>= 6)
+    Suggests: ctags, vim-doc, vim-scripts
+    Description: Vi IMproved - enhanced vi editor
+     Vim is an almost compatible version of the UNIX editor Vi.
+     .
+     Many new features have been added: multi level undo, syntax
+     highlighting, command line history, on-line help, filename
+     completion, block operations, folding, Unicode support, etc.
+     .
+     This package contains a version of vim compiled with a rather
+     standard set of features.  This package does not provide a GUI
+     version of Vim.  See the other vim-* packages if you need more
+     (or less).
+    Homepage: http://www.vim.org/
+    Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+  ``` 
+- `dpkg -L vim` shows all the files owned by the package
+
+   ```
+    f@f-VirtualBox:~$ dpkg -L vim
+    /.
+    /usr
+    /usr/bin
+    /usr/bin/vim.basic
+    /usr/share
+    /usr/share/bug
+    /usr/share/bug/vim
+    /usr/share/bug/vim/presubj
+    /usr/share/bug/vim/script
+    /usr/share/doc
+    /usr/share/lintian
+    /usr/share/lintian/overrides
+    /usr/share/lintian/overrides/vim
+    /usr/share/doc/vim
+   ```
+- `dpkg -S` shows which package a file belongs to 
+
+    ```
+    f@f-VirtualBox:~$ dpkg -S /usr/bin/vim.basic
+    vim: /usr/bin/vim.basic
+    ```
+- List all the package and size ans sort them by size `dpkg-query -W -f '${Installed-Size}\t${Package}\n' | sort -k 1 -n`
