@@ -14,11 +14,13 @@ We take a multithread download program as an example to demonstrate how we monit
    `lscpu`. 
    
     Note: #CPU = Cores_per_socket * #socket * Threads_per_core
-- Size of physical memory. 
+- Size of memory, physical memory and virtual memory 
 
    `free - h;`
    
    `cat /proc/meminfo`
+   
+   `swapon`
  
 #### Start the testing program
 ```
