@@ -117,7 +117,7 @@ f         2421  0.0  0.1 182084  3608 pts/17   S+   15:15   0:00 axel -s 100 -a 
    ```
    Looks similar, arond every 10 senconds, data will be flushed into disk. 
    
-   - System network usage
+- System network usage
    ```
                                      19.1Mb                         38.1Mb                         57.2Mb                         76.3Mb                   9[0/0]
    +------------------------------+------------------------------+------------------------------+------------------------------+------------------------------
@@ -129,4 +129,6 @@ f         2421  0.0  0.1 182084  3608 pts/17   S+   15:15   0:00 axel -s 100 -a 
                                                                    <=                                                                     0b      0b    126b
    f-VirtualBox                                                    => gateway                                                             0b      0b     24b
    ```
-   As you can eee, VirtualBox receives data from download.thinkbroadban.com at 28Mb/s rate which is around 3MB/s. Since we know that's the network bandwidth, we know the the bottleneck of this process is network. If we get larger bandwidth network, we can increase the download speed.
+   
+#### Conclusion
+The downloading process is network bound program. All other system resources are far away from exhuasting, CPU, Memory and Disk. As you can eee, VirtualBox receives data from download.thinkbroadban.com at 28Mb/s rate which is around 3MB/s. Since we know that's the network bandwidth, we know the the bottleneck of this process is network. If we get larger bandwidth network, we can increase the download speed.
