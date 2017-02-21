@@ -50,14 +50,17 @@ Is something hopping the CPUs?
      12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0                          
      13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1     
    ```
+   
 - `uptime`: average CPU load looks ok
+  
   ```
   fmars$ uptime
   18:33:41 up 6 min,  2 users,  load average: 0.23, 0.50, 0.33
   ```
+  
   Average CPU load in 5, 10, 15mins are 0.23, 0.50, 0.33.
   
-` 'vmstat 10` overall CPU utilization looks ok
+- `vmstat 10` overall CPU utilization looks ok
   ```
   fmars$ vmstat 10
   procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
