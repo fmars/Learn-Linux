@@ -74,4 +74,67 @@ Is something hopping the CPUs?
   ```
   In CPU column set, each column stands for user util, system util, idle, wait. Most of time CPUs are in idle state.
   
+  #### Memory
+  - `free -h`: plenty of memory and swap
+  ```
+  fmars$ free -h
+                total        used        free      shared  buff/cache   available
+  Mem:           3.8G        1.2G        1.9G         52M        771M        2.4G
+  Swap:          3.9G          0B        3.9G
+  ```
+  
+  - `swapon`: plenty of virtual memory
+  ```
+  fmars$ swapon
+  NAME      TYPE      SIZE USED PRIO
+  /dev/sda3 partition   4G   0B   -1
+  ```
+  
+  - `vmstat 5`
+  ```
+  fmars$ vmstat 5
+  procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+   r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+   1  0      0 2001476  49916 722028    0    0   215    19  295  825  5  1 90  4  0
+   0  0      0 2001600  49916 722028    0    0     0     0  482  867  0  0 99  0  0
+   0  0      0 2001316  49916 722028    0    0     0     0  535 1098  0  0 99  0  0
+   0  0      0 2001192  49916 722028    0    0     0     0  488 1024  0  0 100  0  0
+   1  0      0 1987436  49916 735920    0    0     0     0  737 2569  2  1 97  0  0
+   1  0      0 1982432  49916 735924    0    0     0     0  766 1939  6  1 93  0  0
+  ```
+  In memory column we can see, there is enough memory and swap space. In swap column, it shows no high frequent swap in/out happens. System interrupt and context switch are normal.
+  
+#### Disk 
+- `iostat 5`: didn't see abnormal behavior
+  ```
+  fmars$ iostat 5
+  Linux 4.8.0-38-generic (ubuntu-servder)         02/20/2017      _x86_64_        (4 CPU)
+
+  avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+             5.07    0.04    1.08    3.40    0.00   90.41
+
+  Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+  sda              18.80       711.62        62.99     692504      61297
+
+  avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+             4.60    0.00    1.29    0.10    0.00   94.02
+
+  Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+  sda               0.40         2.40         0.00         12          0
+
+  avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+             0.75    0.00    0.55    0.00    0.00   98.69
+
+  Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+  sda               2.00         0.00         8.00          0         40
+  ```
+  
+#### Network 
+- `sudo iftop`: didn't see anything
+- `netstat`: TODO
+
+## Conclusion
+Based on investigation so far, I didn't see any exhuastaion happend in either CPU, memory, disk. So I'm suspecting network is unstable because the connection frequetly break when I ssh into the host. So I swapped network adapter of my old desktop and the new one. The old desktop now performs good however the new one stuck. Thus I believe the problem is network adapter is too old to work. And I'm going to get a new one. 
+TODO: didn't dig into network performance analyze. Need to learn more and fill this section later. But most likely when some related problem occurs.
+
   
