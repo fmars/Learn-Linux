@@ -135,6 +135,8 @@ Is something hopping the CPUs?
 
 ## Conclusion
 Based on investigation so far, I didn't see any exhuastaion happend in either CPU, memory, disk. So I'm suspecting network is unstable because the connection frequetly break when I ssh into the host. So I swapped network adapter of my old desktop and the new one. The old desktop now performs good however the new one stuck. Thus I believe the problem is network adapter is too old to work. And I'm going to get a new one. 
+
+
 TODO: didn't dig into network performance analyze. Need to learn more and fill this section later. But most likely when some related problem occurs.
 
   
