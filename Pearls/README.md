@@ -1,3 +1,1 @@
-Learning Linux from solving problems in real world is the best way to learn Linux.
-
-This folder are all real world problems.
+Learning from real world problems is the best way to learn Linux.
