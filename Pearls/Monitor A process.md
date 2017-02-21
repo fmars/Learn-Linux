@@ -1,10 +1,8 @@
-## Context
-I'm running a download program. It downloads a file at some speed. I want to know if I can increase that speed. So I need first profile the download process, have some sense of the performance and figure out what's the bottleneck of the process or system. Then decide what can I can do make it perform better.
-(I went through system monitoring chapters including process, memory, io. I learnt several commands however I didn't  really grasp them until I happpened to face one performance problem, tried to solve it and got my hands dirty.)
-
-
 ## Motivation
 I need a tailer program to tail data from a remote storage system. But I also need to ensure that the tailer program could fetch data fast enough to meet performance requirements. So I need to understand the performance of a tailer program, what's the bottleneck, and if we can improve.
+
+## Context
+I went through system monitoring chapters including process, memory, io. I learnt several commands however I didn't  really grasp them until I happpened to face one performance problem, tried to solve it and got my hands dirty.
 
 ## Scenario
 We take a multithread download program as an example to demonstrate how we monitor the performance of a program.
