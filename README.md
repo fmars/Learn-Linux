@@ -16,3 +16,5 @@
 - The Handbook is great. It explains system principles in a convenient way. Purely reading this book without having a real problem in mind may cause losing yourself.
 
 So having some sense of the whole picture, getting high level ideas of each component, having real world problem, digging into the details, is a nice precedure to take.
+
+Most people say the best way to learn Linux Admin is to think about some Linux Admin project which interests you. However it's almost impossible for a Linux Admin newbie to come up with a Linux Admin project to start with. So I asked some experienced folks. One awesome idea I got is, building your desktop as your server. Deploy your website on it. Set it up as a ssh server. Set it up as a cloud storage system. Build encrypted RAID storage on it, etc. Also I promise there will be tons of Linux related problem occuring in your work. Try to dig into and solve it when you face it. Real world problems are the best opportunities to learn Linux Admin skills. And I list what I met in `Pearls` folder.
