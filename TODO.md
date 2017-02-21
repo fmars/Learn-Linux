@@ -7,3 +7,4 @@
   - Set up RAID
   - Encryption
 - [ ] Write script to analyze website visit and build dashboard
+- [ ] Understand udev and mount
