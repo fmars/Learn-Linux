@@ -1,6 +1,6 @@
 - [x] Network trouble shooting: why fails to access fmars.me from local network
-- [ ] Set up Email server
-- [ ] Seperate /static/write folder out in Homepage. Make it easy to access. Make the file name and format easy to update.
+- [ ] Set up Email server (Failed)
+- [x] Seperate /static/write folder out in Homepage. Make it easy to access. Make the file name and format easy to update.
 - [ ] Build Cloud storage service
   - Set up NFS
   - Install hard disks
